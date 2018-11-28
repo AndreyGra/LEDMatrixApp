@@ -1,11 +1,11 @@
 <mat-grid-list  [gutterSize]="0"  cols="8" rowHeight="1:1" *ngFor="let row of [0,1,2,3,4,5,6,7]">
   <mat-grid-tile *ngFor="let column of [0,1,2,3,4,5,6,7]">
-    <app-my-button
-    (stateChange)="alertMe($event)"
+    <app-led-button
+    (stateChange)="sendGridUpdate($event)"
      col="{{ column }}"
      row="{{ row }}"
      [button_locked] = "grid_locked"
      [is_on] =" button_states[row][column] ">
-    </app-my-button>
+    </app-led-button>
   </mat-grid-tile>
 </mat-grid-list>

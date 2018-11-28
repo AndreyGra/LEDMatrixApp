@@ -1,14 +1,14 @@
-import { Component, OnInit, Input, EventEmitter, Output, OnChanges, SimpleChanges } from '@angular/core';
+import { Component, OnInit, Input, EventEmitter, Output} from '@angular/core';
 import { collectExternalReferences } from '@angular/compiler';
 
 @Component({
-  selector: 'app-my-button',
-  templateUrl: './my-button.component.html',
-  styleUrls: ['./my-button.component.scss']
+  selector: 'app-led-button',
+  templateUrl: './led-button.component.html',
+  styleUrls: ['./led-button.component.scss']
 })
 
 
-export class MyButtonComponent implements OnInit {
+export class LedButtonComponent implements OnInit {
 
   @Input() col: Number;
   @Input() row: Number;

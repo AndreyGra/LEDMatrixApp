@@ -17,7 +17,7 @@ export class GridComponent implements OnInit {
     this.button_states = gridService.getDefaultGridData();
   }
 
-  alertMe(location: [number, number]) {
+  sendGridUpdates(location: [number, number]) {
     const myObserver = {
       next: x => console.log('Observer got a next value: ' + x),
       error: err => console.error('Observer got an error: ' + err),
