@@ -7,7 +7,7 @@ import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
 import { GridComponent } from './grid/grid.component';
 import { AppRoutingModule } from './app-routing.module';
-import { LedButtonComponent } from './my-button/led-button.component';
+import { LedButtonComponent } from './led-button/led-button.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
