@@ -11,3 +11,7 @@ app.use(bodyParser.json());
 // Create link to Angular build directory
 var distDir = __dirname + "/dist/";
 app.use(express.static(distDir));
+
+app.get("/hello", (req,res)=>{
+  res.status(200).json("All good");
+})
