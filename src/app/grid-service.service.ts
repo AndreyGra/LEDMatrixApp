@@ -31,7 +31,7 @@ export class GridService {
     const headers = new HttpHeaders ()
                        .set('Content-Type', 'text/plain');
 
-    return this.http.post(`http://192.168.43.81/changePixel?row=${row}&col=${col}`, {responseType: 'text'});
+    return this.http.post(`http://192.168.43.45/changePixel?row=${row}&col=${col}`, {responseType: 'text'});
    }
 }
  // 192.168.43.81'
